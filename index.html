@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Loading Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="button">
+      Upload
+      <div class="load">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+      </div>
+    </button>
+
+    <script>
+      document.getElementById("button").addEventListener("click", function() {
+        this.classList.add("activeLoading");
+      });
+    </script>
+</body>
+</html>
